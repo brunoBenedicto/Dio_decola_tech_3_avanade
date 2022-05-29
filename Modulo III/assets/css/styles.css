@@ -39,3 +39,8 @@ body {
 #listaDeTarefas{
     list-style-type: none;
 }
+
+:checked + label {
+    text-decoration: line-through;
+    color: grey;
+  }
