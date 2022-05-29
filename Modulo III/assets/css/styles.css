@@ -10,9 +10,10 @@ body {
     justify-content: center;
     flex-direction: column;
     background-color: rgb(177, 225, 255);
+
 }
 
-button {
+.botaoIncremento {
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -33,4 +34,8 @@ button {
     align-items: center;
     margin: 0 20px;
     font-size: 16pt;
+}
+
+#listaDeTarefas{
+    list-style-type: none;
 }

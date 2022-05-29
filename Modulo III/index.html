@@ -10,9 +10,19 @@
     <h1>Olá, mundo!</h1>
     <p>Este é o meu primeiro projeto Javascript.</p>
     <div id="counter">
-        <button name="subtrair" onclick="decrement()">-</button>
+        <button class="botaoIncremento" name="subtrair" onclick="decrement()">-</button>
         <span id="currentNumber">0</span>
-        <button name="adicionar" onclick="increment()">+</button>
+        <button class="botaoIncremento" name="adicionar" onclick="increment()">+</button>
+    </div>
+
+    <div>
+        <h1> Desafio To-do List</h1>
+        <input type="text" id="tarefa" placeholder="digite a nova tarefa"/>
+        <button name="addTarefa" onclick="addTarefa()">Adicionar tarefa</button>
+        <ul id="listaDeTarefas">
+
+        </ul>
+
     </div>
     <script src="assets/javascript/script.js"></script>
 </body>

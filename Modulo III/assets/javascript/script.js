@@ -12,6 +12,7 @@ function mudaCor(){
         currentNumberWrapper.style.color = "red";
     }
 }
+
 function increment(){
     if (currentNumber < 10){
         currentNumber += 1;
@@ -26,4 +27,27 @@ function decrement(){
         currentNumberWrapper.innerHTML = currentNumber;
     }
     mudaCor();
+}
+
+
+function addTarefa(){
+    var tarefa = document.getElementById("tarefa");
+    var cb = document.createElement("input");
+    cb.setAttribute("type", "checkbox");
+    cb.setAttribute("id",tarefa.value);
+    cb.setAttribute("name",tarefa.value);
+    cb.setAttribute("value",tarefa.value);
+    var rotulo = document.createElement("label");
+    rotulo.setAttribute("for",cb.id);
+    rotulo.innerHTML=cb.id;
+    var itemLista = document.createElement("li");
+    var lista = document.getElementById("listaDeTarefas");
+    
+
+    itemLista.append(cb);
+    itemLista.append(rotulo);
+    lista.appendChild(itemLista);
+    console.log(itemLista);
+
+
 }
