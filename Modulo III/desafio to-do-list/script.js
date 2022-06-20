@@ -48,3 +48,9 @@ function removeTarefa(){
 
     }
 }
+
+
+document.getElementById("btnAdicionar").addEventListener("click", addTarefa);
+document.getElementById("btnRemoveConcluida").addEventListener("click", removeTarefa);
+document.getElementById("btnRemoveTudo").addEventListener("click", removeTodas);
+

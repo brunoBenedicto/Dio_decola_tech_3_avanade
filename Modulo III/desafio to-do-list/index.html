@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To do list</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,16 +12,16 @@
             <div class="container-lista">
                 <div class="containerControleTarefas">
                     <input class="inputText" type="text" id="tarefa" placeholder="digite a nova tarefa"/>
-                    <button class ="btnTarefas" name="addTarefa" onclick="addTarefa()">Adicionar tarefa</button>
+                    <button id="btnAdicionar" class ="btnTarefas" name="addTarefa">Adicionar tarefa</button>
                 </div>
                 <ul id="listaDeTarefas">
                 </ul> 
                 <div class="containerControleTarefas">
-                    <button class ="btnTarefas" name="removeTarefa" onclick="removeTarefa()">Remover tarefa concluida</button>
-                    <button class ="btnTarefas" name="ApagaTodasTarefas" onclick="removeTodas()">Apagar todas</button>
+                    <button id="btnRemoveConcluida"class ="btnTarefas" name="removeTarefa">Remover tarefa concluida</button>
+                    <button id="btnRemoveTudo" class ="btnTarefas" name="ApagaTodasTarefas">Apagar todas</button>
                 </div>
             <div>
 
     <script src="script.js"></script>
 </body>
-</html>
+</html> 
