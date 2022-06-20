@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, Image, Text, StyleSheet, SafeAreaView, StatusBar, Pressable, Linking} from 'react-native';
+import { useState } from 'react';
 
 const colorGithub = 'black';
 const colorFontGithub = '#C9D1D9';
@@ -17,7 +18,13 @@ const App = () => {
           await Linking.openURL(urlToMyGithub);
         }
       };
-   
+
+    const [ligaDesliga, setLigaDesliga] = useState(false);
+    
+    function ligarDesligar(){
+        return setLigaDesliga(!ligaDesliga);
+    }
+
     return (
         <SafeAreaView  style={style.container}>
             <StatusBar backgroundColor ={colorGithub} barStyle = "ligth-content" />

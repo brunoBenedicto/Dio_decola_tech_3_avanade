@@ -36,11 +36,3 @@ body {
     font-size: 16pt;
 }
 
-#listaDeTarefas{
-    list-style-type: none;
-}
-
-:checked + label {
-    text-decoration: line-through;
-    color: grey;
-  }

@@ -30,25 +30,3 @@ function decrement(){
 }
 
 
-function addTarefa(){
-    var tarefa = document.getElementById("tarefa");
-    var cb = document.createElement("input");
-    var rotulo = document.createElement("label");
-    var itemLista = document.createElement("li");
-    var lista = document.getElementById("listaDeTarefas");
-    
-    cb.setAttribute("type", "checkbox");
-    cb.setAttribute("id",tarefa.value);
-    cb.setAttribute("name",tarefa.value);
-    cb.setAttribute("value",tarefa.value);
-    
-    rotulo.setAttribute("for",cb.id);
-    rotulo.innerHTML=cb.id;
-    
-    itemLista.append(cb);
-    itemLista.append(rotulo);
-    lista.appendChild(itemLista);
-
-
-
-}

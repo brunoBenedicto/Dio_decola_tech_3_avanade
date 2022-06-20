@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="headerLista"><h1> Desafio To-do List</h1></div>
+            <div class="container-lista">
+                <div class="containerControleTarefas">
+                    <input class="inputText" type="text" id="tarefa" placeholder="digite a nova tarefa"/>
+                    <button class ="btnTarefas" name="addTarefa" onclick="addTarefa()">Adicionar tarefa</button>
+                </div>
+                <ul id="listaDeTarefas">
+                </ul> 
+                <div class="containerControleTarefas">
+                    <button class ="btnTarefas" name="removeTarefa" onclick="removeTarefa()">Remover tarefa concluida</button>
+                    <button class ="btnTarefas" name="ApagaTodasTarefas" onclick="removeTodas()">Apagar todas</button>
+                </div>
+            <div>
+
+    <script src="script.js"></script>
+</body>
+</html>

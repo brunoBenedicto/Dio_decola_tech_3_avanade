@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #705426;
+
+}
+#listaDeTarefas{
+    list-style-type: none;
+    overflow-y: auto;
+    max-height: 200px ;
+    height: 200px;
+}
+
+:checked + label {
+    text-decoration: line-through;
+    color: grey;
+}
+.headerLista{
+    background-color: #2E1D02;
+    padding: 10px;
+    width: 500px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headerLista h1{
+    color: #F2B552;
+}
+.container-lista{
+    background-color: #F2B552;
+    padding: 10px;
+    width: 500px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    max-height: 300px;
+    align-items: center;
+}
+.itemLista{
+    color: #F2B552;
+    border-bottom: 1px solid #BD7708;
+    padding-top: 15px;
+    width: 400px;
+    background-color: #2E1D02;
+
+}
+.inputText{
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f3ebde;
+    width: 70%;
+}
+.btnTarefas{
+    height: 30px;
+    background-color: #BD7708;
+    border: none;
+    border-radius: 10px;
+}
+.containerControleTarefas{
+    display: flex;
+    justify-content: space-between;
+}
